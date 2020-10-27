@@ -1,68 +1,60 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
-}
-
-html {
-    font-size: 10px;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #EEEEEE;
-    font-size: 3rem;
 }
 
 nav {
+    z-index: 100;
+    background: #fff;
     height: 100px;
     width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-    background-color: white;
-    color: black;
-    z-index: 100;
-    display: inline-block;
+    box-shadow: 0px 0px 10px;
 }
 
 nav img {
     height: 100px;
     float: left;
-    margin-left: 50px
+    margin-left: 80px
 }
 
 nav img:hover {
-    opacity: 0.7;
+    opacity: 0.5;
     transition: 0.5s;
 }
 
 nav ul {
     float: right;
-    margin-right: 30px
+    margin-right: 88px;
 }
 
 nav ul li {
     display: inline-block;
-    line-height: 100px;
-    margin-right: 10px
+    line-height: 80px;
+    margin: 0 5px;
 }
 
 nav ul li a {
     color: black;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 100px;
+    border-radius: 3px;
     text-transform: uppercase;
 }
 
-a.active,
 nav ul li a:hover {
     color: gray;
-    transition: 0.5s;
+    transition: 0.4s;
     text-decoration: none;
-    background: yellow;
+    text-decoration: underline;
 }
 
 nav span a {
@@ -70,8 +62,8 @@ nav span a {
     font-weight: 700;
     float: left;
     line-height: 100px;
-    margin-left: 50px;
-    font-size: 3rem;
+    margin-left: 30px;
+    font-size: 30px;
 }
 
 nav span a i {
@@ -81,101 +73,346 @@ nav span a i {
 nav span a:hover {
     color: red;
     text-decoration: none;
-    transition: .5s;
-
-}
-
-#check {
-    visibility: hidden;
-    z-index: -100;
+    transition: .4s;
 }
 
 .checkbtn {
-    font-size: 2rem;
+    font-size: 30px;
+    color: black;
     float: right;
-    line-height: 100px;
-    margin-right: 30px;
+    line-height: 80px;
+    margin-right: 40px;
     cursor: pointer;
     display: none;
 }
 
-.checkbtn:hover {
-    transition: .5s;
-    color: gray;
+#check {
+    display: none;
 }
 
-@media screen and (max-width: 1020px) {
+.conteiner0 {
+    display: flex;
+    flex-direction: column;
+}
+
+.heder {
+    padding-top: 60px;
+    width: 100%;
+}
+
+.content img {
+    width: 50vw;
+}
+
+.box1 {
+    width: 33%;
+    font-size: 16px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #C8C5C5;
+}
+
+.box2 {
+    font-size: 16px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #C8C5C5;
+}
+
+.box3 {
+    font-size: 16px;
+    padding: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.box3 i {
+    font-size: 90px;
+}
+
+.box4 {
+    padding: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.hours {
+    margin-left: 10px;
+}
+
+.description {
+    padding: 50px;
+    font-size: 18px;
+    background-color: #F7F3F3;
+
+}
+
+.text {
+    padding: 30px;
+    font-size: 18px;
+    background-color: #F7F3F3;
+
+}
+
+.text1 {
+
+    font-size: 22px;
+    background-color: #F7F3F3;
+    float: left
+}
+
+.text2 {
+    font-size: 22px;
+    margin-left: 40px;
+    background-color: #F7F3F3;
+    float: left
+}
+
+.fb {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tel a {
+    text-decoration: none;
+    color: black;
+}
+
+.tel a:hover {
+    text-decoration: none;
+    color: red;
+    transition: .4s;
+}
+
+.hours2 {
+    float: left;
+    margin-right: 10px;
+
+}
+
+.map {
+    margin-bottom: 60px;
+}
+
+
+.conteiner1 {
+    /* border-bottom: 4px solid grey; */
+    padding-bottom: 20px;
+}
+
+.conteiner1 div.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteiner2 {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.conteiner2 div.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.motto div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.motto div img {
+    width: 100%;
+}
+
+.motto div h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 65px;
+    position: absolute;
+    padding-top: 90px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px black;
+    font-family: 'Farro', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+.foot {
+    background-color: lightgray;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+
+}
+
+.font1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+body footer .conteiner {
+    height: 100px;
+    width: 100%;
+    background-color: grey;
+    font-size: 12px
+}
+
+footer div {
+    padding: 30px;
+    text-align: center;
+    color: #444444;
+}
+
+footer div a {
+    color: #444444;
+    text-decoration: underline;
+
+}
+
+footer div a:hover {
+    color: white;
+    transition: .5s;
+}
+
+@media (max-width: 1040px) {
     nav img {
         height: 60px;
-        margin-left: 20px;
-        margin-top: 24px
-    }
-
-    nav span a {
-        font-size: 2rem;
-        font-weight: 700;
-        margin-left: 20px;
-    }
-
-    nav ul li a {
-        font-size: 14px;
-    }
-}
-
-
-
-@media screen and (max-width: 790px) {
-    .checkbtn {
-        display: block;
+        margin-top: 22px;
         cursor: pointer;
     }
 
-    ul {
-        position: fixed;
+    nav ul {
+        float: right;
+        margin-right: 30px;
+    }
+
+    nav span a {
+        color: black;
+        font-weight: 700;
+        float: left;
+        line-height: 100px;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .checkbtn {
+        display: block;
+        /* line-height: 80px;*/
+
+    }
+
+    nav {
+        background: #fff;
+        height: 80px;
         width: 100%;
-        height: 100vh;
-        background: brown;
-        top: 80px;
-        left: 0;
-        text-align: center;
+        position: fixed;
+        box-shadow: 0px 0px 10px;
     }
 
     nav img {
         height: 42px;
         margin-left: 2px;
-        margin-top: 28px;
+        margin-top: 20px;
         cursor: pointer;
     }
 
-    nav ul {
+    nav span a {
+        color: black;
+        font-weight: 700;
+        float: left;
+        line-height: 80px;
+        margin-left: 14px;
+        font-size: 16px;
+    }
+
+    ul {
         position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: brown;
-        text-align: center;
-        left: -100%;
+        width: 34%;
+        height: 60vh;
+        background: silver;
+        top: 80px;
+        left: 66%;
+        text-align: right;
         transition: all .5s;
     }
 
-    nav span a {
-        font-size: 1.4rem;
-        font-weight: 700;
-        margin-left: 8px;
-    }
 
     nav ul li {
         display: block;
+        line-height: 0px;
     }
 
     nav ul li a {
-        font-size: 1.2rem;
+        font-size: 16px;
     }
 
-    a:hover {
+    a:hover,
+    a.active {
         background: none;
-        color: aqua;
+        color: #0082e6;
     }
 
     #check:checked ~ ul {
-        left: 0;
+        left: 100%;
     }
+
+    nav ul li a {
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 60px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+
+}
+
+.motto div img {
+    width: 100%;
+    margin-top: 80px;
+}
+
+footer {
+    height: 120px;
+    width: 100%;
+    background-color: grey;
+    color: black;
+    font-size: 12px
+}
+
+footer div {
+    padding-bottom: 0px;
+    text-align: center
+}

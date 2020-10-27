@@ -8,6 +8,15 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    text-align: justify;
+    background: #C0C0C0;
+}
+
+.all {
+    max-width: 1288px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
 }
 
 nav {
@@ -52,8 +61,9 @@ nav ul li a {
 
 nav ul li a:hover {
     color: gray;
-    transition: 0.5s;
+    transition: 0.4s;
     text-decoration: none;
+    text-decoration: underline;
 }
 
 nav span a {
@@ -72,7 +82,7 @@ nav span a i {
 nav span a:hover {
     color: red;
     text-decoration: none;
-    transition: .5s;
+    transition: .4s;
 }
 
 .checkbtn {
@@ -80,7 +90,7 @@ nav span a:hover {
     color: black;
     float: right;
     line-height: 80px;
-    margin-right: 40px;
+    margin-right: 32px;
     cursor: pointer;
     display: none;
 }
@@ -95,8 +105,16 @@ nav span a:hover {
 }
 
 .heder {
-    padding-top: 40px;
+    padding-top: 60px;
     width: 100%;
+}
+
+.content {
+    width: 100%;
+}
+
+.img1 {
+    width: 50%;
 }
 
 .content img {
@@ -105,70 +123,87 @@ nav span a:hover {
 
 .box1 {
     width: 33%;
-    font-size: 16px;
+    font-size: 18px;
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
     border: 1px solid #C8C5C5;
-}
-
-.box2 {
-    font-size: 16px;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border: 1px solid #C8C5C5;
-}
-
-.box3 {
-    font-size: 16px;
-    padding: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-}
-
-.box3 i {
-    font-size: 90px;
-}
-
-.box4 {
-    padding: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
-
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
 }
 
 .hours {
     margin-left: 10px;
 }
 
-.text {
+.description {
     padding: 50px;
-    font-size: 22px;
+    font-size: 18px;
     background-color: #F7F3F3;
 }
 
+.text {
+    padding: 30px;
+    font-size: 18px;
+    background-color: #F7F3F3;
+}
+
+.text1 {
+    font-size: 18px;
+    background-color: #F7F3F3;
+    float: left
+}
+
+.text2 {
+    font-size: 18px;
+    margin-left: 40px;
+    background-color: #F7F3F3;
+    float: left
+}
+
+.fb {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tel a {
+    text-decoration: none;
+    color: black;
+}
+
+.tel a:hover {
+    text-decoration: none;
+    color: red;
+    transition: .4s;
+}
+
+.hours2 {
+    float: left;
+    margin-right: 10px;
+
+}
+
+.map {
+    margin-bottom: 60px;
+}
+
+
 .conteiner1 {
-    border-bottom: 4px solid grey;
+    /* border-bottom: 4px solid grey; */
     padding-bottom: 20px;
 }
 
 .conteiner1 div.content {
     display: flex;
     flex-direction: row;
+}
 
+.conteiner2 {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.conteiner2 div.content {
+    display: flex;
+    flex-direction: row;
 }
 
 .motto div {
@@ -179,33 +214,38 @@ nav span a:hover {
 
 .motto div img {
     width: 100%;
+    margin-top: 100px;
+    overflow: hidden;
 }
 
 .motto div h1 {
+    color: #fff;
     text-align: center;
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 65px;
     position: absolute;
-    padding-top: 50px;
+    padding-top: 90px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px black;
+    font-family: 'Farro', sans-serif;
 }
 
 h2 {
     text-align: center;
-    padding: 40px;
+    padding: 30px;
     margin-top: 50px;
-    font-size: 48px;
+    font-size: 38px;
     letter-spacing: 2px;
     font-weight: 500;
     text-transform: uppercase;
-
 }
 
 .foot {
-    background-color: lightgray;
+    background-color: lightgrey;
     text-align: center;
     font-size: 60px;
     margin-top: 20px;
-
+    /* #C0C0C0;  */
 }
 
 .font1 {
@@ -214,7 +254,7 @@ h2 {
 }
 
 body footer .conteiner {
-    height: 100px;
+    height: 112px;
     width: 100%;
     background-color: grey;
     font-size: 12px
@@ -237,7 +277,7 @@ footer div a:hover {
     transition: .5s;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1180px) {
     nav img {
         height: 60px;
         margin-top: 22px;
@@ -261,95 +301,132 @@ footer div a:hover {
     nav ul li a {
         font-size: 16px;
     }
-}
 
-@media (max-width: 800px) {
-    .checkbtn {
-        display: block;
-        /* line-height: 80px;*/
+    .motto div h1 {
+        font-size: 38px;
+
 
     }
 
-    nav {
-        background: #fff;
-        height: 80px;
+    @media (max-width: 926px) {
+        .checkbtn {
+            display: block;
+            /* line-height: 80px;*/
+
+        }
+
+        nav {
+            background: #fff;
+            height: 80px;
+            width: 100%;
+            position: fixed;
+            box-shadow: 0px 0px 10px;
+        }
+
+        nav img {
+            height: 42px;
+            margin-left: 2px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        nav span a {
+            color: black;
+            font-weight: 700;
+            float: left;
+            line-height: 80px;
+            margin-left: 14px;
+            font-size: 16px;
+        }
+
+        ul {
+            position: fixed;
+            width: 34%;
+            height: 60vh;
+            background: silver;
+            top: 80px;
+            left: 66%;
+            text-align: right;
+            transition: all .5s;
+        }
+
+
+        nav ul li {
+            display: block;
+            line-height: 0px;
+        }
+
+        nav ul li a {
+            font-size: 16px;
+        }
+
+        a:hover,
+        a.active {
+            background: none;
+            color: #0082e6;
+        }
+
+        #check:checked ~ ul {
+            left: 100%;
+        }
+
+        nav ul li a {
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 60px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        .motto div h1 {
+            font-size: 16px;
+
+        }
+
+        .description {
+            order: 1
+        }
+
+        .conteiner1 div.content {
+            display: block;
+
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .box1 {
+            font-size: 14px;
+            width: 100%;
+
+
+            padding: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 20px;
+
+
+
+        }
+
+    }
+
+    .motto div img {
         width: 100%;
-        position: fixed;
-        box-shadow: 0px 0px 10px;
+        margin-top: 80px;
     }
 
-    nav img {
-        height: 42px;
-        margin-left: 2px;
-        margin-top: 20px;
-        cursor: pointer;
-    }
-
-    nav span a {
+    footer {
+        height: 120px;
+        width: 100%;
+        background-color: grey;
         color: black;
-        font-weight: 700;
-        float: left;
-        line-height: 80px;
-        margin-left: 14px;
-        font-size: 16px;
+        font-size: 12px
     }
 
-    ul {
-        position: fixed;
-        width: 34%;
-        height: 60vh;
-        background: silver;
-        top: 80px;
-        left: 66%;
-        text-align: right;
-        transition: all .5s;
+    footer div {
+        padding-bottom: 0px;
+        text-align: center
     }
-
-
-    nav ul li {
-        display: block;
-        line-height: 0px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-
-    a:hover,
-    a.active {
-        background: none;
-        color: #0082e6;
-    }
-
-    #check:checked ~ ul {
-        left: 100%;
-    }
-
-    nav ul li a {
-        color: black;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 60px;
-        border-radius: 3px;
-        text-transform: uppercase;
-    }
-
-}
-
-.motto div img {
-    width: 100%;
-    margin-top: 80px;
-}
-
-footer {
-    height: 120px;
-    width: 100%;
-    background-color: grey;
-    color: black;
-    font-size: 12px
-}
-
-footer div {
-    padding-bottom: 0px;
-    text-align: center
-}
