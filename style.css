@@ -123,7 +123,7 @@ nav span a:hover {
 
 .box1 {
     width: 33%;
-    font-size: 18px;
+    font-size: 20px;
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -136,24 +136,24 @@ nav span a:hover {
 
 .description {
     padding: 50px;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #F7F3F3;
 }
 
 .text {
     padding: 30px;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #F7F3F3;
 }
 
 .text1 {
-    font-size: 18px;
+    font-size: 20px;
     background-color: #F7F3F3;
     float: left
 }
 
 .text2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 40px;
     background-color: #F7F3F3;
     float: left
@@ -234,7 +234,7 @@ h2 {
     text-align: center;
     padding: 30px;
     margin-top: 50px;
-    font-size: 38px;
+    font-size: 44px;
     letter-spacing: 2px;
     font-weight: 500;
     text-transform: uppercase;
