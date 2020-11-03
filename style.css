@@ -9,14 +9,12 @@
 body {
     font-family: 'Lato', sans-serif;
     text-align: justify;
-    background: #C0C0C0;
 }
 
-.all {
-    max-width: 1288px;
+.wrapper {
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-    background: white;
 }
 
 nav {
@@ -62,7 +60,6 @@ nav ul li a {
 nav ul li a:hover {
     color: gray;
     transition: 0.4s;
-    text-decoration: none;
     text-decoration: underline;
 }
 
@@ -99,63 +96,42 @@ nav span a:hover {
     display: none;
 }
 
-.conteiner0 {
-    display: flex;
-    flex-direction: column;
-}
-
 .heder {
     padding-top: 60px;
     width: 100%;
 }
 
-.content {
-    width: 100%;
-}
-
-.img1 {
-    width: 50%;
-}
-
-.content img {
-    width: 50vw;
-}
-
 .box1 {
     width: 33%;
-    font-size: 20px;
+    font-size: 13px;
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
     border: 1px solid #C8C5C5;
 }
 
-.hours {
-    margin-left: 10px;
-}
-
 .description {
-    padding: 50px;
-    font-size: 20px;
-    background-color: #F7F3F3;
+    padding: 60px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 16px;
 }
 
 .text {
     padding: 30px;
-    font-size: 20px;
-    background-color: #F7F3F3;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text1 {
-    font-size: 20px;
-    background-color: #F7F3F3;
+    font-size: 16px;
     float: left
 }
 
 .text2 {
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 40px;
-    background-color: #F7F3F3;
     float: left
 }
 
@@ -175,25 +151,46 @@ nav span a:hover {
     transition: .4s;
 }
 
+.hours1 {
+    margin-left: 10px;
+}
+
 .hours2 {
     float: left;
     margin-right: 10px;
-
 }
 
 .map {
     margin-bottom: 60px;
 }
 
-
-.conteiner1 {
-    /* border-bottom: 4px solid grey; */
-    padding-bottom: 20px;
-}
-
-.conteiner1 div.content {
+.content0 {
     display: flex;
     flex-direction: row;
+}
+
+.content0 img {
+    width: 540px;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: row;
+    background-image: url(img/foto03.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding: 40px;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: row;
+    background-image: url(img/foto05.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding: 40px;
 }
 
 .conteiner2 {
@@ -201,10 +198,21 @@ nav span a:hover {
     padding-bottom: 20px;
 }
 
-.conteiner2 div.content {
-    display: flex;
-    flex-direction: row;
+.conteiner3 {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
 }
+
+
+.servicestext1 {
+    padding-bottom: 26px;
+}
+
+.servicestext2 {
+    text-align: left;
+    padding-bottom: 26px;
+}
+
 
 .motto div {
     display: flex;
@@ -215,7 +223,6 @@ nav span a:hover {
 .motto div img {
     width: 100%;
     margin-top: 100px;
-    overflow: hidden;
 }
 
 .motto div h1 {
@@ -224,7 +231,7 @@ nav span a:hover {
     font-weight: 600;
     font-size: 65px;
     position: absolute;
-    padding-top: 90px;
+    padding-top: 30px;
     letter-spacing: 2px;
     text-shadow: 0 0 8px black;
     font-family: 'Farro', sans-serif;
@@ -238,14 +245,13 @@ h2 {
     letter-spacing: 2px;
     font-weight: 500;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .foot {
-    background-color: lightgrey;
     text-align: center;
     font-size: 60px;
     margin-top: 20px;
-    /* #C0C0C0;  */
 }
 
 .font1 {
@@ -253,28 +259,26 @@ h2 {
     font-size: 60px;
 }
 
-body footer .conteiner {
-    height: 112px;
-    width: 100%;
-    background-color: grey;
-    font-size: 12px
-}
-
-footer div {
-    padding: 30px;
-    text-align: center;
-    color: #444444;
-}
-
 footer div a {
     color: #444444;
     text-decoration: underline;
-
 }
 
 footer div a:hover {
     color: white;
     transition: .5s;
+}
+
+.footconteiner {
+    width: 100%;
+    height: 120px;
+    font-size: 10px;
+    background-color: gray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444444;
 }
 
 @media (max-width: 1180px) {
@@ -304,129 +308,191 @@ footer div a:hover {
 
     .motto div h1 {
         font-size: 38px;
-
-
     }
 
-    @media (max-width: 926px) {
-        .checkbtn {
-            display: block;
-            /* line-height: 80px;*/
+}
 
-        }
+@media (max-width: 1038px) {
+    .checkbtn {
+        display: block;
+    }
 
-        nav {
-            background: #fff;
-            height: 80px;
-            width: 100%;
-            position: fixed;
-            box-shadow: 0px 0px 10px;
-        }
+    nav {
+        background: #fff;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        box-shadow: 0px 0px 10px;
+    }
 
-        nav img {
-            height: 42px;
-            margin-left: 2px;
-            margin-top: 20px;
-            cursor: pointer;
-        }
+    nav img {
+        height: 42px;
+        margin-left: 2px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
 
-        nav span a {
-            color: black;
-            font-weight: 700;
-            float: left;
-            line-height: 80px;
-            margin-left: 14px;
-            font-size: 16px;
-        }
+    nav span a {
+        color: black;
+        font-weight: 700;
+        float: left;
+        line-height: 80px;
+        margin-left: 14px;
+        font-size: 16px;
+    }
 
-        ul {
-            position: fixed;
-            width: 34%;
-            height: 60vh;
-            background: silver;
-            top: 80px;
-            left: 66%;
-            text-align: right;
-            transition: all .5s;
-        }
-
-
-        nav ul li {
-            display: block;
-            line-height: 0px;
-        }
-
-        nav ul li a {
-            font-size: 16px;
-        }
-
-        a:hover,
-        a.active {
-            background: none;
-            color: #0082e6;
-        }
-
-        #check:checked ~ ul {
-            left: 100%;
-        }
-
-        nav ul li a {
-            color: black;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 60px;
-            border-radius: 3px;
-            text-transform: uppercase;
-        }
-
-        .motto div h1 {
-            font-size: 16px;
-
-        }
-
-        .description {
-            order: 1
-        }
-
-        .conteiner1 div.content {
-            display: block;
-
-        }
-
-        .content {
-            padding: 20px;
-        }
-
-        .box1 {
-            font-size: 14px;
-            width: 100%;
+    ul {
+        position: fixed;
+        width: 34%;
+        height: 60vh;
+        background: silver;
+        top: 80px;
+        left: 66%;
+        text-align: right;
+        transition: all .5s;
+    }
 
 
-            padding: 20px;
-            margin-left: 0px;
-            margin-right: 0px;
-            margin-top: 20px;
+    nav ul li {
+        display: block;
+        line-height: 0px;
+    }
 
+    nav ul li a {
+        font-size: 16px;
+    }
 
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
 
-        }
+    #check:checked ~ ul {
+        left: 100%;
+    }
 
+    nav ul li a {
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 60px;
+        border-radius: 3px;
+        text-transform: uppercase;
     }
 
     .motto div img {
-        width: 100%;
         margin-top: 80px;
     }
 
-    footer {
-        height: 120px;
-        width: 100%;
-        background-color: grey;
-        color: black;
-        font-size: 12px
+    .motto div h1 {
+        padding-top: 70px;
+        font-size: 16px;
     }
 
-    footer div {
-        padding-bottom: 0px;
-        text-align: center
+    .box1 {
+        font-size: 10px;
+        width: 100%;
+        padding: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
     }
+
+    .content0 {
+        padding: 20px;
+        display: block;
+    }
+
+    .content0 div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .content0 div img {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        background-image: url(img/ff0111.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        color: white;
+        padding-top: 20px;
+    }
+
+    .content2 {
+        display: flex;
+        flex-direction: column;
+        background-image: url(img/ff022.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        color: white;
+        padding-top: 20px;
+    }
+
+    .conteiner3 {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    box1 {
+        width: 100%;
+        font-size: 10px;
+        border: 1px solid #C8C5C5;
+    }
+
+    .description {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        font-size: 11px;
+    }
+
+    img1 {
+        order: 2;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hours {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hours {
+        text-align: justify;
+    }
+
+    .fuck1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 11px;
+    }
+
+    .text2 {
+        font-size: 11px;
+        margin-left: 0px;
+        margin-top: 26px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+}
