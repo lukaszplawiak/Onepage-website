@@ -176,7 +176,7 @@ nav span a:hover {
 .content1 {
     display: flex;
     flex-direction: row;
-    background-image: url(img/foto03.jpg);
+    background-image: url(../img/foto03.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -186,7 +186,7 @@ nav span a:hover {
 .content2 {
     display: flex;
     flex-direction: row;
-    background-image: url(img/foto05.jpg);
+    background-image: url("../img/foto05.jpg");
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -343,11 +343,11 @@ footer div a:hover {
 
     ul {
         position: fixed;
-        width: 34%;
-        height: 60vh;
+        width: 40%;
+        height: 50vh;
         background: silver;
         top: 80px;
-        left: 66%;
+        left: 60%;
         text-align: right;
         transition: all .5s;
     }
@@ -356,10 +356,6 @@ footer div a:hover {
     nav ul li {
         display: block;
         line-height: 0px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
     }
 
     a:hover,
@@ -391,12 +387,13 @@ footer div a:hover {
     }
 
     .box1 {
-        font-size: 10px;
+        font-size: 13px;
         width: 100%;
         padding: 20px;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 20px;
+        border: 1px solid #C8C5C5;
     }
 
     .content0 {
@@ -420,7 +417,7 @@ footer div a:hover {
     .content1 {
         display: flex;
         flex-direction: column;
-        background-image: url(img/ff0111.jpg);
+        background-image: url("../img/foto03.jpg");
         background-attachment: fixed;
         background-size: cover;
         color: white;
@@ -430,7 +427,7 @@ footer div a:hover {
     .content2 {
         display: flex;
         flex-direction: column;
-        background-image: url(img/ff022.jpg);
+        background-image: url("../img/foto05.jpg");
         background-attachment: fixed;
         background-size: cover;
         color: white;
@@ -442,17 +439,11 @@ footer div a:hover {
         padding-bottom: 0px;
     }
 
-    box1 {
-        width: 100%;
-        font-size: 10px;
-        border: 1px solid #C8C5C5;
-    }
-
     .description {
         order: 1;
         display: flex;
         flex-direction: column;
-        font-size: 11px;
+        font-size: 14px;
     }
 
     img1 {
@@ -482,11 +473,11 @@ footer div a:hover {
     .text1 {
         display: flex;
         flex-direction: column;
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .text2 {
-        font-size: 11px;
+        font-size: 14px;
         margin-left: 0px;
         margin-top: 26px;
     }
