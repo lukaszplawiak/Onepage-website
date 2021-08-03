@@ -1,5 +1,5 @@
 # Simply one page website
-One page website for car service company.
+One page website for a car service company.
 
 ## General info
 One page website mainly with HTML 5 and CSS 3, full responsive for mobile devices with @media.
