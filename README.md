@@ -1,8 +1,8 @@
-# Simply one page website
-One page website for a car service company.
+# One page website
+A fully responsive one-page website for a car repair service
 
 ## General info
-One page website mainly with HTML 5 and CSS 3, full responsive for mobile devices with @media.
+One page website mainly with HTML 5, CSS 3 and JS, full responsive for mobile devices
 
 ## Technologies
 * HTML 5
@@ -10,7 +10,7 @@ One page website mainly with HTML 5 and CSS 3, full responsive for mobile device
 * JS
 
 ## Status
-Project is: _in progress.
+Project is: Deployed on server
 
 ## Contact
-Created by Lukasz Plawiak lukaszplawiakzero1@gmail.com - feel free to contact me!
+Created by Lukasz Plawiak lukasz.b.plawiak@gmail.com - feel free to contact me!
