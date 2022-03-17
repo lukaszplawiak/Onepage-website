@@ -11,6 +11,7 @@ One page website mainly with HTML 5, CSS 3 and JS, full responsive for mobile de
 
 ## Status
 Project is: Deployed on server
+Project site: https://bingoserwis.pl/
 
 ## Contact
 Created by Lukasz Plawiak lukasz.b.plawiak@gmail.com - feel free to contact me!
